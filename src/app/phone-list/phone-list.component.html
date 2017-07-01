@@ -4,7 +4,7 @@
 
 <div class="phone-list">
   <div *ngFor="let onePhone of phones">
-    <img [src]="onePhone.image">
+    <img height="300" [src]="onePhone.image">
     <h3> {{ onePhone.name }} </h3>
     <p> {{ onePhone.brand }} </p>
     <a [routerLink]="['phone', onePhone._id]">
